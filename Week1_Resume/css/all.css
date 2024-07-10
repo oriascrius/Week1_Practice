@@ -74,9 +74,7 @@ img {
 a {
   text-decoration: none;
   color: #000000;
-  transition: -webkit-text-decoration 0.3s;
   transition: text-decoration 0.3s;
-  transition: text-decoration 0.3s, -webkit-text-decoration 0.3s;
 }
 a:hover {
   text-decoration: underline;
@@ -100,6 +98,9 @@ a:hover {
   gap: 16px;
 }
 
+.header {
+  padding-top: 160px;
+}
 .header .title {
   font-size: 128px;
   letter-spacing: 0.12em;
