@@ -1,0 +1,50 @@
+@import "reset";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+}
+/* base */
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+/* layout */
+.container {
+  max-width: 640px;
+  margin: 0 auto;
+}
+// display
+.d-flex {
+  display: flex;
+}
+// spacing
+.mb-24 {
+  margin-bottom: 24px;
+}
+.me-20 {
+  margin-right: 20px;
+}
+// color
+.bd-gray{
+  background-color: gray;
+}
+//
+.content {
+  h2 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+.footer {
+  text-align: center;
+  padding: 48px 0;
+}
