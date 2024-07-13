@@ -1,5 +1,5 @@
-@import 'reset';
-@import url('https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&display=swap');
+@import "reset";
+@import url("https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&display=swap");
 
 // color
 $primary-color: #000000;
@@ -18,110 +18,110 @@ $fontsize-fs-3: 20px;
 
 // 設定
 body {
-    font-family: $font-family;
-    line-height: $line-height;
+  font-family: $font-family;
+  line-height: $line-height;
+}
+.container {
+  // 左636+右636+間距24
+  max-width: 1296px;
+  margin: 0 auto;
+}
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+.img {
+  display: block;
+}
+a {
+  text-decoration: none;
+  color: $primary-color;
+  transition: text-decoration 0.3s;
+  &:hover {
+    text-decoration: underline;
   }
-  .container {
-    // 左636+右636+間距24
-    max-width: 1296px;
-    margin: 0 auto;
+}
+.spacing-8px {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.spacing-12px {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.spacing-16px {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+// header
+.header {
+  padding-top: 160px;
+  .title {
+    font-size: $fontsize-h1;
+    letter-spacing: 0.12em;
   }
-  img {
-    max-width: 100%;
-    vertical-align: middle;
+  .sub-title {
+    font-size: $fontsize-h2;
+    text-align: right;
+    letter-spacing: 0.12em;
   }
-  .img{
-    display: block;
+  .pic {
+    text-align: center;
   }
-  a {
-    text-decoration: none;
-    color: $primary-color;
-    transition: text-decoration 0.3s;
+}
+// intro
+.intro {
+  background-color: $secon-grey-color;
+  margin-bottom: 80px;
+  .intro-item {
+    width: 636px;
+    margin-left: auto;
+    padding: 48px 0;
+    font-size: $fontsize-fs-1;
+  }
+}
+
+// info
+.info {
+  width: 636px;
+  margin-right: auto;
+  margin-bottom: 160px;
+  .info-item {
+    padding: 0 24px 40px 0;
+  }
+  .info-title {
+    font-size: $fontsize-h3;
+    color: $secondary-color;
+    border-bottom: 3px solid;
+    margin-bottom: 16px;
+  }
+  .info-text {
+    font-size: $fontsize-fs-2;
+  }
+  .info-since {
+    font-size: $fontsize-fs-3;
+    color: $grey-color;
+  }
+}
+// footer
+.footer {
+  background-color: $primary-color;
+  padding: 64px 0;
+  margin: 0 auto; /* 使容器置中 */
+  text-align: center; /* 使內部 inline-block 元素置中 */
+
+  .icon {
+    width: 64px;
+    height: 64px;
+    display: inline-block; /* 設置為內聯塊元素 */
+    margin: 0 10px; /* 添加內部 margin，確保間距 */
+    transition: transform 0.5s;
     &:hover {
-      text-decoration: underline;
+      transform: scale(1.3, 1.3);
     }
   }
-  .spacing-8px {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-  .spacing-12px {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-  .spacing-16px {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-  
-  // header
-  .header {
-    padding-top: 160px;
-    .title {
-      font-size: $fontsize-h1;
-      letter-spacing: 0.12em;
-    }
-    .sub-title {
-      font-size: $fontsize-h2;
-      text-align: right;
-      letter-spacing: 0.12em;
-    }
-    .pic {
-      text-align: center;
-    }
-  }
-  // intro
-  .intro {
-    background-color: $secon-grey-color;
-    margin-bottom: 80px;
-    .intro-item {
-      width: 50%;
-      margin-left: auto;
-      padding: 48px 0;
-      font-size: $fontsize-fs-1;
-    }
-  }
-  
-  // info
-  .info {
-    width: 50%;
-    margin-right: auto;
-    margin-bottom: 160px;
-    .info-item {
-      margin-bottom: 40px;
-      margin-right: 24px;
-    }
-    .info-title {
-      font-size: $fontsize-h3;
-      color: $secondary-color;
-      border-bottom: 3px solid;
-      margin-bottom: 16px;
-    }
-    .info-text {
-      font-size: $fontsize-fs-2;
-    }
-    .info-since {
-      font-size: $fontsize-fs-3;
-      color: $grey-color;
-    }
-  }
-  // footer
-  .footer {
-    background-color: $primary-color;
-    padding: 64px 0;
-    .footer-flex {
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-    }
-    .icon {
-      transition: transform 0.5s;
-      &:hover {
-        transform: scale(1.3, 1.3);
-      }
-    }
-  }
-  
+}
