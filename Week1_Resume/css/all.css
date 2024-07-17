@@ -130,7 +130,7 @@ a:hover {
 .info {
   width: 636px;
   margin-right: auto;
-  margin-bottom: 160px;
+  padding-bottom: 160px;
 }
 .info .info-item {
   padding: 0 24px 40px 0;
