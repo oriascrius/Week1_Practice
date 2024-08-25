@@ -14,89 +14,93 @@
 
   <!-- header -->
   <header class="header container">
-    <!-- data-aos="fade-down" 視差滾動 -->
-    <h1 class="title" data-aos="fade-down" data-aos-offset="300"
-    data-aos-easing="ease-in-sine">VITO</h1>
-    <div class="pic" data-aos="fade-right" data-aos-offset="300"
-    data-aos-easing="ease-in-sine">
-      <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week1/vito.png?raw=true" alt="個人圖片">
+      <!-- overflow-hidden 解決 Aos 視差滾動造成的 X 軸，放在父層容器 -->
+    <div class="overflow-hidden">
+      <!-- data-aos="fade-down" 視差滾動 -->
+      <h1 class="title" data-aos="fade-down">VITO</h1>
+      <div class="pic" data-aos="fade-right">
+        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week1/vito.png?raw=true"
+          alt="個人圖片">
+      </div>
+      <h2 class="sub-title" data-aos="fade-left">RESUME</h2>
     </div>
-    <h2 class="sub-title" data-aos="fade-left">RESUME</h2>
   </header>
   <main>
     <!-- intro -->
-    <section class="intro"  data-aos="fade-up-left" data-aos-offset="300"
-    data-aos-easing="ease-in-sine">
+    <section class="intro">
       <div class="container">
-        <div class="intro-item">
-          <p>
-            I'm Vito, a UI Designer with 5+ years of experience. I create visually appealing interfaces for web and
-            mobile apps. Proficient in Sketch, Adobe XD, Figma, HTML, CSS, and JavaScript. I enjoy collaborating with
-            others to create high-quality products.
-          </p>
+        <div class="overflow-hidden">
+          <div class="intro-item" data-aos="fade-up-left">
+            <p>
+              I'm Vito, a UI Designer with 5+ years of experience. I create visually appealing interfaces for web and
+              mobile apps. Proficient in Sketch, Adobe XD, Figma, HTML, CSS, and JavaScript. I enjoy collaborating with
+              others to create high-quality products.
+            </p>
+          </div>
         </div>
       </div>
     </section>
     <!-- info -->
-    <section class="container" data-aos="flip-left" data-aos-offset="300"
-    data-aos-easing="ease-in-sine">
-      <ul class="info">
-        <li class="info-item">
-          <h3 class="info-title">Vito Evans</h3>
-          <ul class="info-text spacing-8px">
-            <li>456 Walnut Avenue, Someville, USA</li>
-            <li><a href="tel:+1 123 456 7890">+1 123 456 7890</a></li>
-            <li><a href="mailto:info@hexschool.com">info@hexschool.com</a></li>
-            <li>www.infohexschool.com</li>
-          </ul>
-        </li>
-        <li class="info-item">
-          <h3 class="info-title">Education</h3>
-          <ul class="info-text spacing-16px">
-            <li>
-              <time class="info-since">2014-2018</time>
-              <p>Bachelor of Science in Business Administration, University of California, Los Angeles</p>
-            </li>
-            <li>
-              <time class="info-since">2012-2014</time>
-              <p>Associate of Arts in Graphic Design, San Francisco State University</p>
-            </li>
-            <li>
-              <time class="info-since">2008-2012</time>
-              <p>High School Diploma, Lincoln High School</p>
-            </li>
+    <section class="container">
+      <div class="overflow-hidden">
+        <ul class="info" data-aos="flip-left">
+          <li class="info-item">
+            <h3 class="info-title">Vito Evans</h3>
+            <ul class="info-text spacing-8px">
+              <li>456 Walnut Avenue, Someville, USA</li>
+              <li><a href="tel:+1 123 456 7890">+1 123 456 7890</a></li>
+              <li><a href="mailto:info@hexschool.com">info@hexschool.com</a></li>
+              <li>www.infohexschool.com</li>
+            </ul>
+          </li>
+          <li class="info-item">
+            <h3 class="info-title">Education</h3>
+            <ul class="info-text spacing-16px">
+              <li>
+                <time class="info-since">2014-2018</time>
+                <p>Bachelor of Science in Business Administration, University of California, Los Angeles</p>
+              </li>
+              <li>
+                <time class="info-since">2012-2014</time>
+                <p>Associate of Arts in Graphic Design, San Francisco State University</p>
+              </li>
+              <li>
+                <time class="info-since">2008-2012</time>
+                <p>High School Diploma, Lincoln High School</p>
+              </li>
 
-          </ul>
-        </li>
-        <li class="info-item">
-          <h3 class="info-title">Work</h3>
-          <ul class="info-text spacing-16px">
-            <li>
-              <time class="info-since">2018-2021</time>
-              <p>Marketing Manager, ABC Company </p>
-            </li>
+            </ul>
+          </li>
+          <li class="info-item">
+            <h3 class="info-title">Work</h3>
+            <ul class="info-text spacing-16px">
+              <li>
+                <time class="info-since">2018-2021</time>
+                <p>Marketing Manager, ABC Company </p>
+              </li>
 
-            <li>
-              <time class="info-since">2016-2018</time>
-              <p>Sales Associate, XYZ Corporation </p>
-            </li>
+              <li>
+                <time class="info-since">2016-2018</time>
+                <p>Sales Associate, XYZ Corporation </p>
+              </li>
 
-            <li>
-              <time class="info-since">2014-2016</time>
-              <p>Customer Service Representative, QRS Inc.</p>
-            </li>
+              <li>
+                <time class="info-since">2014-2016</time>
+                <p>Customer Service Representative, QRS Inc.</p>
+              </li>
 
-          </ul>
-        </li>
-        <li class="info-item">
-          <h3 class="info-title">Awards</h3>
-          <ul class="info-text spacing-12px">
-            <li>Best in Show Award, National Advertising Awards, 2020</li>
-            <li>Honorable Mention, International Design Competition, 2019</li>
-            <li>People's Choice Award, Local Art Exhibition, 2018</li>
-          </ul>
-        </li>
-      </ul>
+            </ul>
+          </li>
+          <li class="info-item">
+            <h3 class="info-title">Awards</h3>
+            <ul class="info-text spacing-12px">
+              <li>Best in Show Award, National Advertising Awards, 2020</li>
+              <li>Honorable Mention, International Design Competition, 2019</li>
+              <li>People's Choice Award, Local Art Exhibition, 2018</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </section>
   </main>
   <!-- footer -->
@@ -119,6 +123,29 @@
   <!--  aos 視差滾動初始化 -->
   <script>
     AOS.init();
+    // 你也可以傳入一個可選的設定對象
+    // 以下是默認的設定
+    AOS.init({
+      // 全局設定:
+      // disable: false, // 接受以下值: 'phone', 'tablet', 'mobile', 布林值, 表達式或函數
+      // startEvent: 'DOMContentLoaded', // 在文檔上觸發的事件名稱，AOS 應在該事件初始化
+      // initClassName: 'aos-init', // 初始化後應用的類名
+      // animatedClassName: 'aos-animate', // 動畫應用的類名
+      // useClassNames: false, // 如果為 true，會將 `data-aos` 的內容作為類名添加在滾動時
+      // disableMutationObserver: false, // 禁用自動變化檢測（進階）
+      // debounceDelay: 50, // 窗口大小調整時防抖延遲時間（進階）
+      // throttleDelay: 99, // 滾動頁面時節流延遲時間（進階）
+
+      // 可以通過 `data-aos-*` 屬性在每個元素上覆蓋的設定:
+      offset: 120, // 從原始觸發點的偏移量（以像素為單位）
+      delay: 400, // 延遲時間從 0 到 3000，步長為 50ms
+      duration: 1000, // 動畫持續時間從 0 到 3000，步長為 50ms
+      easing: 'ease', // AOS 動畫的默認過渡效果
+      once: false, // 動畫是否只在向下滾動時觸發一次
+      mirror: true, // 元素是否應在滾動過後再次動畫
+      anchorPlacement: 'top-bottom', // 定義元素相對於窗口的哪個位置應觸發動畫
+    });
+
   </script>
 </body>
 

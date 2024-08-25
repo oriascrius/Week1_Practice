@@ -16,6 +16,12 @@ $fontsize-fs-1: 32px;
 $fontsize-fs-2: 24px;
 $fontsize-fs-3: 20px;
 
+// 解決第七周視差滾動，左右動畫會出現X軸
+// 放在父層容器解決
+.overflow-hidden {
+  overflow: hidden;
+}
+
 // 設定
 body {
   font-family: $font-family;
