@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>個人履歷</title>
+  <!-- 第七周視差滾動引入，須放在自定義CSS的樣式前面 -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/all.css">
 </head>
 
@@ -12,15 +14,19 @@
 
   <!-- header -->
   <header class="header container">
-    <h1 class="title">VITO</h1>
-    <div class="pic">
+    <!-- data-aos="fade-down" 視差滾動 -->
+    <h1 class="title" data-aos="fade-down" data-aos-offset="300"
+    data-aos-easing="ease-in-sine">VITO</h1>
+    <div class="pic" data-aos="fade-right" data-aos-offset="300"
+    data-aos-easing="ease-in-sine">
       <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week1/vito.png?raw=true" alt="個人圖片">
     </div>
-    <h2 class="sub-title">RESUME</h2>
+    <h2 class="sub-title" data-aos="fade-left">RESUME</h2>
   </header>
   <main>
     <!-- intro -->
-    <section class="intro">
+    <section class="intro"  data-aos="fade-up-left" data-aos-offset="300"
+    data-aos-easing="ease-in-sine">
       <div class="container">
         <div class="intro-item">
           <p>
@@ -32,7 +38,8 @@
       </div>
     </section>
     <!-- info -->
-    <section class="container">
+    <section class="container" data-aos="flip-left" data-aos-offset="300"
+    data-aos-easing="ease-in-sine">
       <ul class="info">
         <li class="info-item">
           <h3 class="info-title">Vito Evans</h3>
@@ -107,6 +114,12 @@
     </ul>
   </footer>
 
+  <!-- 第七周 aos 視差滾動引入JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!--  aos 視差滾動初始化 -->
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
